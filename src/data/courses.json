@@ -1,0 +1,494 @@
+[
+    {
+        "id": 1,
+        "name": "AI For Everyone",
+        "platform": "Coursera",
+        "price": "Free",
+        "duration": "6 hours",
+        "level": "Beginner",
+        "category": "AI Basics",
+        "tags": [
+            "AI",
+            "Basics",
+            "Non-Technical"
+        ],
+        "popularity": "trending",
+        "thumbnail": "https://images.unsplash.com/photo-1581093588401-22afc3c64a87?w=800",
+        "link": "https://www.coursera.org/learn/ai-for-everyone"
+    },
+    {
+        "id": 2,
+        "name": "Introduction to Artificial Intelligence (edX)",
+        "platform": "edX",
+        "price": "Free",
+        "duration": "10 hours",
+        "level": "Beginner",
+        "category": "AI Basics",
+        "tags": [
+            "AI",
+            "Introduction",
+            "Ethics"
+        ],
+        "popularity": "featured",
+        "thumbnail": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800",
+        "link": "https://www.edx.org/course/artificial-intelligence-ai"
+    },
+    {
+        "id": 3,
+        "name": "Artificial Intelligence Crash Course",
+        "platform": "YouTube",
+        "price": "Free",
+        "duration": "3 hours",
+        "level": "Beginner",
+        "category": "AI Basics",
+        "tags": [
+            "AI",
+            "Crash Course",
+            "YouTube"
+        ],
+        "popularity": "new",
+        "thumbnail": "https://images.unsplash.com/photo-1581090700227-1e37b190418e?w=800",
+        "link": "https://www.youtube.com/watch?v=JMUxmLyrhSk"
+    },
+    {
+        "id": 4,
+        "name": "Generative AI for Everyone",
+        "platform": "Coursera",
+        "price": "Free",
+        "duration": "8 hours",
+        "level": "Beginner",
+        "category": "AI Basics",
+        "tags": [
+            "Generative AI",
+            "AI Ethics"
+        ],
+        "popularity": "popular",
+        "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
+        "link": "https://www.coursera.org/learn/generative-ai-for-everyone"
+    },
+    {
+        "id": 5,
+        "name": "Machine Learning A-Z™: Hands-On Python & R In Data Science",
+        "platform": "Udemy",
+        "price": "₹499",
+        "duration": "44 hours",
+        "level": "Intermediate",
+        "category": "Machine Learning",
+        "tags": [
+            "ML",
+            "Python",
+            "Data Science"
+        ],
+        "popularity": "featured",
+        "thumbnail": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
+        "link": "https://www.udemy.com/course/machinelearning/"
+    },
+    {
+        "id": 6,
+        "name": "Supervised Machine Learning: Regression and Classification",
+        "platform": "Coursera",
+        "price": "Free Audit",
+        "duration": "30 hours",
+        "level": "Intermediate",
+        "category": "Machine Learning",
+        "tags": [
+            "ML",
+            "Supervised Learning"
+        ],
+        "popularity": "trending",
+        "thumbnail": "https://images.unsplash.com/photo-1581091012184-5c2af7f79a45?w=800",
+        "link": "https://www.coursera.org/learn/machine-learning"
+    },
+    {
+        "id": 7,
+        "name": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+        "platform": "Coursera",
+        "price": "Free Audit",
+        "duration": "35 hours",
+        "level": "Advanced",
+        "category": "Machine Learning",
+        "tags": [
+            "Reinforcement Learning",
+            "Recommender Systems"
+        ],
+        "popularity": "popular",
+        "thumbnail": "https://images.unsplash.com/photo-1506765515384-028b60a970df?w=800",
+        "link": "https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning"
+    },
+    {
+        "id": 8,
+        "name": "ML for Beginners: A Curriculum",
+        "platform": "Microsoft Learn",
+        "price": "Free",
+        "duration": "10 hours",
+        "level": "Beginner",
+        "category": "Machine Learning",
+        "tags": [
+            "ML",
+            "Curriculum",
+            "Microsoft"
+        ],
+        "popularity": "new",
+        "thumbnail": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800",
+        "link": "https://microsoft.github.io/ML-For-Beginners/"
+    },
+    {
+        "id": 9,
+        "name": "Deep Learning Specialization",
+        "platform": "Coursera",
+        "price": "Free Audit",
+        "duration": "4 months",
+        "level": "Advanced",
+        "category": "Deep Learning",
+        "tags": [
+            "Neural Networks",
+            "TensorFlow"
+        ],
+        "popularity": "featured",
+        "thumbnail": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800",
+        "link": "https://www.coursera.org/specializations/deep-learning"
+    },
+    {
+        "id": 10,
+        "name": "Full Stack Deep Learning Bootcamp",
+        "platform": "Full Stack Deep Learning",
+        "price": "Free",
+        "duration": "20 hours",
+        "level": "Advanced",
+        "category": "Deep Learning",
+        "tags": [
+            "DL",
+            "MLOps",
+            "Deployment"
+        ],
+        "popularity": "popular",
+        "thumbnail": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=800",
+        "link": "https://fullstackdeeplearning.com/"
+    },
+    {
+        "id": 11,
+        "name": "Deep Learning with PyTorch: Zero to GANs",
+        "platform": "Jovian",
+        "price": "Free",
+        "duration": "60 hours",
+        "level": "Intermediate",
+        "category": "Deep Learning",
+        "tags": [
+            "PyTorch",
+            "GANs"
+        ],
+        "popularity": "featured",
+        "thumbnail": "https://images.unsplash.com/photo-1564869738747-f7de0e3a2f3b?w=800",
+        "link": "https://jovian.ai/learn/deep-learning-with-pytorch-zero-to-gans"
+    },
+    {
+        "id": 12,
+        "name": "Practical Deep Learning for Coders",
+        "platform": "fast.ai",
+        "price": "Free",
+        "duration": "15 hours",
+        "level": "Intermediate",
+        "category": "Deep Learning",
+        "tags": [
+            "fast.ai",
+            "DL"
+        ],
+        "popularity": "trending",
+        "thumbnail": "https://images.unsplash.com/photo-1633265486064-086b219458d1?w=800",
+        "link": "https://course.fast.ai/"
+    },
+    {
+        "id": 13,
+        "name": "ChatGPT Prompt Engineering for Developers",
+        "platform": "DeepLearning.AI",
+        "price": "Free",
+        "duration": "1.5 hours",
+        "level": "Intermediate",
+        "category": "Prompting",
+        "tags": [
+            "ChatGPT",
+            "Prompt Engineering"
+        ],
+        "popularity": "featured",
+        "thumbnail": "https://images.unsplash.com/photo-1682687220591-f7b3f4c8a3ed?w=800",
+        "link": "https://learn.deeplearning.ai/chatgpt-prompt-eng"
+    },
+    {
+        "id": 14,
+        "name": "Introduction to Prompt Engineering for Generative AI",
+        "platform": "YouTube",
+        "price": "Free",
+        "duration": "2 hours",
+        "level": "Beginner",
+        "category": "Prompting",
+        "tags": [
+            "Prompting",
+            "Generative AI"
+        ],
+        "popularity": "trending",
+        "thumbnail": "https://images.unsplash.com/photo-1605792657660-596af9009e88?w=800",
+        "link": "https://www.youtube.com/watch?v=jA3tKzU2KXQ"
+    },
+    {
+        "id": 15,
+        "name": "Prompt Engineering Masterclass",
+        "platform": "Udemy",
+        "price": "₹799",
+        "duration": "5 hours",
+        "level": "Intermediate",
+        "category": "Prompting",
+        "tags": [
+            "ChatGPT",
+            "Midjourney"
+        ],
+        "popularity": "new",
+        "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
+        "link": "https://www.udemy.com/course/prompt-engineering-masterclass/"
+    },
+    {
+        "id": 16,
+        "name": "AI Tools Mastery: From ChatGPT to Midjourney",
+        "platform": "Udemy",
+        "price": "₹999",
+        "duration": "9 hours",
+        "level": "Beginner",
+        "category": "AI Tools",
+        "tags": [
+            "ChatGPT",
+            "Midjourney",
+            "AI Tools"
+        ],
+        "popularity": "featured",
+        "thumbnail": "https://images.unsplash.com/photo-1679678694570-9fce3e1a7f43?w=800",
+        "link": "https://www.udemy.com/course/ai-tools-mastery/"
+    },
+    {
+        "id": 17,
+        "name": "Top 10 AI Tools for Productivity",
+        "platform": "YouTube",
+        "price": "Free",
+        "duration": "1 hour",
+        "level": "Beginner",
+        "category": "AI Tools",
+        "tags": [
+            "AI Tools",
+            "Productivity"
+        ],
+        "popularity": "trending",
+        "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
+        "link": "https://www.youtube.com/watch?v=bmY5uJcG2Zo"
+    },
+    {
+        "id": 18,
+        "name": "Building AI-Powered Apps with OpenAI API",
+        "platform": "YouTube",
+        "price": "Free",
+        "duration": "2 hours",
+        "level": "Intermediate",
+        "category": "AI Tools",
+        "tags": [
+            "OpenAI",
+            "API",
+            "Coding"
+        ],
+        "popularity": "popular",
+        "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
+        "link": "https://www.youtube.com/watch?v=rxnQ2lxD4gE"
+    },
+    {
+        "id": 19,
+        "name": "AI Toolchain for Creators: Notion, ChatGPT & Midjourney",
+        "platform": "Skillshare",
+        "price": "Free Trial",
+        "duration": "4 hours",
+        "level": "Beginner",
+        "category": "AI Tools",
+        "tags": [
+            "Notion",
+            "ChatGPT",
+            "Automation"
+        ],
+        "popularity": "new",
+        "thumbnail": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800",
+        "link": "https://www.skillshare.com/en/classes/ai-tools-for-creators/18098274"
+    },
+    {
+        "id": 20,
+        "name": "Generative AI with Large Language Models",
+        "platform": "Coursera",
+        "price": "Free Audit",
+        "duration": "25 hours",
+        "level": "Intermediate",
+        "category": "AI Basics",
+        "tags": [
+            "LLM",
+            "Generative AI"
+        ],
+        "popularity": "featured",
+        "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
+        "link": "https://www.coursera.org/learn/generative-ai-with-llms"
+    },
+    {
+        "id": 21,
+        "name": "LangChain for LLM Application Development",
+        "platform": "DeepLearning.AI",
+        "price": "Free",
+        "duration": "3 hours",
+        "level": "Intermediate",
+        "category": "AI Tools",
+        "tags": [
+            "LangChain",
+            "LLM",
+            "Python"
+        ],
+        "popularity": "popular",
+        "thumbnail": "https://images.unsplash.com/photo-1682687220591-f7b3f4c8a3ed?w=800",
+        "link": "https://learn.deeplearning.ai/langchain/"
+    },
+    {
+        "id": 22,
+        "name": "Building Systems with the ChatGPT API",
+        "platform": "DeepLearning.AI",
+        "price": "Free",
+        "duration": "3 hours",
+        "level": "Intermediate",
+        "category": "AI Tools",
+        "tags": [
+            "ChatGPT API",
+            "Automation"
+        ],
+        "popularity": "featured",
+        "thumbnail": "https://images.unsplash.com/photo-1581090700227-1e37b190418e?w=800",
+        "link": "https://learn.deeplearning.ai/chatgpt-building-systems"
+    },
+    {
+        "id": 23,
+        "name": "Google Cloud ML Engineer Learning Path",
+        "platform": "Google Cloud",
+        "price": "Free",
+        "duration": "40 hours",
+        "level": "Advanced",
+        "category": "Machine Learning",
+        "tags": [
+            "GCP",
+            "ML Ops"
+        ],
+        "popularity": "featured",
+        "thumbnail": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800",
+        "link": "https://cloud.google.com/training/machinelearning-ai"
+    },
+    {
+        "id": 24,
+        "name": "MLOps Fundamentals",
+        "platform": "Coursera",
+        "price": "Free Audit",
+        "duration": "30 hours",
+        "level": "Advanced",
+        "category": "Machine Learning",
+        "tags": [
+            "MLOps",
+            "Deployment"
+        ],
+        "popularity": "popular",
+        "thumbnail": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800",
+        "link": "https://www.coursera.org/learn/mlops-fundamentals"
+    },
+    {
+        "id": 25,
+        "name": "AI for Data Analysis with Python",
+        "platform": "Udemy",
+        "price": "₹699",
+        "duration": "12 hours",
+        "level": "Intermediate",
+        "category": "AI Tools",
+        "tags": [
+            "Python",
+            "Data Analysis",
+            "AI"
+        ],
+        "popularity": "trending",
+        "thumbnail": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
+        "link": "https://www.udemy.com/course/ai-for-data-analysis/"
+    },
+    {
+        "id": 26,
+        "name": "AI in Business Specialization",
+        "platform": "Coursera",
+        "price": "Free Audit",
+        "duration": "20 hours",
+        "level": "Beginner",
+        "category": "AI Basics",
+        "tags": [
+            "AI",
+            "Business"
+        ],
+        "popularity": "popular",
+        "thumbnail": "https://images.unsplash.com/photo-1581091012184-5c2af7f79a45?w=800",
+        "link": "https://www.coursera.org/specializations/ai-business"
+    },
+    {
+        "id": 27,
+        "name": "AI for Creative Professionals",
+        "platform": "Skillshare",
+        "price": "Free Trial",
+        "duration": "5 hours",
+        "level": "Beginner",
+        "category": "AI Tools",
+        "tags": [
+            "Creativity",
+            "Generative AI"
+        ],
+        "popularity": "new",
+        "thumbnail": "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800",
+        "link": "https://www.skillshare.com/en/classes/ai-for-creatives/100182"
+    },
+    {
+        "id": 28,
+        "name": "Ethics of Artificial Intelligence and Big Data",
+        "platform": "edX",
+        "price": "Free",
+        "duration": "10 hours",
+        "level": "Intermediate",
+        "category": "AI Basics",
+        "tags": [
+            "AI Ethics",
+            "Data"
+        ],
+        "popularity": "featured",
+        "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800",
+        "link": "https://www.edx.org/course/ethics-of-ai"
+    },
+    {
+        "id": 29,
+        "name": "Mastering Generative AI: Midjourney, ChatGPT & Runway",
+        "platform": "Udemy",
+        "price": "₹899",
+        "duration": "7 hours",
+        "level": "Intermediate",
+        "category": "AI Tools",
+        "tags": [
+            "Generative AI",
+            "Midjourney",
+            "Runway"
+        ],
+        "popularity": "featured",
+        "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
+        "link": "https://www.udemy.com/course/mastering-generative-ai/"
+    },
+    {
+        "id": 30,
+        "name": "Introduction to AI with Python",
+        "platform": "HarvardX",
+        "price": "Free",
+        "duration": "30 hours",
+        "level": "Intermediate",
+        "category": "AI Basics",
+        "tags": [
+            "Python",
+            "AI"
+        ],
+        "popularity": "popular",
+        "thumbnail": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
+        "link": "https://cs50.harvard.edu/ai/"
+    }
+]

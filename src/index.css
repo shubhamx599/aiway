@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* ---------- THEME VARIABLES ---------- */
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --color-primary: #6366f1;
+  --color-secondary: #3b82f6;
+
+  /* Light mode */
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-card: #f9fafb;
+  --color-scroll-track: #f1f1f1;
+  --color-scroll-thumb: #cfcfcf;
+
+  /* Dark mode */
+  --color-bg-dark: #0a0a0a;
+  --color-text-dark: #f4f4f5;
+  --color-card-dark: #18181b;
+  --color-scroll-track-dark: #1a1a1a;
+  --color-scroll-thumb-dark: #3f3f46;
+
+  --radius-xl: 1.25rem;
+  --shadow-soft: 0 4px 24px -8px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- COLOR MODE SYSTEM ---------- */
+:root[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-card: #f9fafb;
+  --color-scroll-track: #00114f;
+  --color-scroll-thumb: #8c00e9;
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #0a0a0a;
+  --color-text: #f4f4f5;
+  --color-card: #18181b;
+  --color-scroll-track: #1a1a1a;
+  --color-scroll-thumb: #3f3f46;
+}
+
+/* ---------- BASE RESET ---------- */
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ---------- SELECTION ---------- */
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* ---------- CUSTOM SCROLLBAR ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-scroll-track);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scroll-thumb);
+  border-radius: 9999px;
+  border: 2px solid var(--color-scroll-track);
+  transition: 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* ---------- FIREFOX SCROLLBAR ---------- */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scroll-thumb) var(--color-scroll-track);
+}
