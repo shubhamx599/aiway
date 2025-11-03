@@ -86,8 +86,8 @@ function Contact() {
         >
           <p className="text-zinc-500 dark:text-zinc-400 text-sm">
             Prefer email? Reach out directly at{" "}
-            <a href="mailto:hello@aicademy.com" className="text-indigo-500 hover:underline">
-              hello@aicademy.com
+            <a href="mailto:hello@aiway.com" className="text-indigo-500 hover:underline">
+              hello@aiway.com
             </a>
           </p>
         </motion.div>

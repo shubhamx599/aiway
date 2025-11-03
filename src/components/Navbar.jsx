@@ -97,7 +97,7 @@ function Navbar() {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            AICademy
+            AIWay
           </motion.span>
         </Link>
 

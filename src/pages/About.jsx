@@ -22,7 +22,7 @@ export default function About() {
           transition={{ duration: 0.7 }}
           className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-400 to-blue-500 text-transparent bg-clip-text"
         >
-          About AICademy
+          About AIWay
         </motion.h1>
         <p className="mt-3 text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto">
           Your gateway to mastering Artificial Intelligence — designed to simplify your learning
@@ -43,7 +43,7 @@ export default function About() {
         </h2>
         <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
           We aim to make AI learning **accessible, transparent, and fun**.  
-          AICademy bridges the gap between curiosity and knowledge — helping learners discover
+          AIWay bridges the gap between curiosity and knowledge — helping learners discover
           curated courses, compare them effectively, and stay ahead in the world of Artificial
           Intelligence.
         </p>

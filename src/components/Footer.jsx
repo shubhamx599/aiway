@@ -8,7 +8,7 @@ function Footer() {
     { icon: RiGithubLine, href: "https://github.com", label: "GitHub" },
     { icon: RiLinkedinBoxLine, href: "https://linkedin.com", label: "LinkedIn" },
     { icon: RiTwitterXLine, href: "https://twitter.com", label: "Twitter" },
-    { icon: RiMailLine, href: "mailto:contact@aicademy.com", label: "Email" },
+    { icon: RiMailLine, href: "mailto:contact@aiway.com", label: "Email" },
   ];
 
   return (
@@ -26,7 +26,7 @@ function Footer() {
           to="/"
           className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-blue-500 text-transparent bg-clip-text"
         >
-          AICademy
+          AIWay
         </Link>
 
         <div className="flex flex-wrap justify-center md:justify-end gap-8 text-sm font-medium text-zinc-500 dark:text-zinc-400">
@@ -64,7 +64,7 @@ function Footer() {
       </div>
 
       <div className="border-t border-zinc-800/30 dark:border-zinc-700/30 text-center py-4 text-xs text-zinc-500">
-        © {new Date().getFullYear()} AICademy. All rights reserved.
+        © {new Date().getFullYear()} AIWay. All rights reserved.
       </div>
     </motion.footer>
   );

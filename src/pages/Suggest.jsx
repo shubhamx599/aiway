@@ -23,7 +23,7 @@ function Suggest() {
           </h1>
 
           <p className="text-zinc-500 dark:text-zinc-400 mb-10 leading-relaxed">
-            Help us expand AICademy’s collection! <br />
+            Help us expand AIWay’s collection! <br />
             If you’ve found a great AI-related course that should be listed here,
             please share it using the form below. We’ll review and add it to our platform.
           </p>
