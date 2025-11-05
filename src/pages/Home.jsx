@@ -8,19 +8,6 @@ import Footer from "../components/Footer";
 import { RiSparkling2Line, RiArrowRightUpLine } from "@remixicon/react";
 
 function Home() {
-  useEffect(() => {
-    gsap.fromTo(
-      ".fade-section",
-      { opacity: 0, y: 40 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        stagger: 0.2,
-        ease: "power3.out",
-      }
-    );
-  }, []);
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-300">
