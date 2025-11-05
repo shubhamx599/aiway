@@ -27,13 +27,13 @@ function Home() {
 
       {/* CTA Banner */}
       <motion.section
-        className="fade-section relative max-w-6xl mx-auto px-6 py-20 text-center overflow-hidden rounded-3xl border border-indigo-500/20 bg-gradient-to-br from-indigo-500/10 via-blue-500/10 to-transparent backdrop-blur-2xl"
+        className="fade-section relative max-w-6xl mx-auto px-6 py-20 text-center overflow-hidden rounded-3xl border border-indigo-500/20 bg-linear-to-br from-indigo-500/10 via-blue-500/10 to-transparent backdrop-blur-2xl"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <div className="absolute inset-0 bg-gradient-to-tr from-indigo-600/10 to-transparent blur-3xl" />
+        <div className="absolute inset-0 bg-linear-to-tr from-indigo-600/10 to-transparent blur-3xl" />
 
         <motion.div
           className="relative z-10 flex flex-col items-center justify-center gap-6"
@@ -46,7 +46,7 @@ function Home() {
             <span className="uppercase tracking-wide text-sm font-medium">Level Up</span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-400 to-blue-500 text-transparent bg-clip-text">
+          <h2 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-indigo-400 to-blue-500 text-transparent bg-clip-text">
             Compare Courses. Save Time. Learn Smarter.
           </h2>
 
