@@ -10,7 +10,7 @@ function Navbar() {
   const location = useLocation();
   const navbarRef = useRef(null);
 
-  // 📜 Scroll Detection with throttle
+  // Scroll Detection with throttle
   useEffect(() => {
     let ticking = false;
     const handleScroll = () => {
@@ -26,13 +26,13 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // 🔄 Auto Close Menu on Route Change
+  // Auto Close Menu on Route Change
   useEffect(() => {
     setMenuOpen(false);
     setActiveHover(null);
   }, [location.pathname]);
 
-  // 🎯 Click outside to close mobile menu
+  // Click outside to close mobile menu
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
@@ -69,9 +69,9 @@ function Navbar() {
   return (
     <nav
       ref={navbarRef}
-      className={`fixed top-0 left-0 w-full z-[100] backdrop-blur-xl transition-all duration-500 ${
+      className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${
         scrolled
-          ? "py-3 bg-white/80 dark:bg-zinc-900/60 shadow-2xl shadow-zinc-900/10"
+          ? "py-3 bg-white/3 backdrop-blur-xl shadow-2xl shadow-zinc-900/10"
           : "py-5 bg-transparent"
       }`}
     >
