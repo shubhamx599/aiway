@@ -44,25 +44,25 @@ function Navbar() {
   }, []);
 
   const navItems = [
-    { 
-      name: "Home", 
-      path: "/"
+    {
+      name: "Home",
+      path: "/",
     },
-    { 
-      name: "Courses", 
-      path: "/courses"
+    {
+      name: "Courses",
+      path: "/courses",
     },
-    { 
-      name: "Compare", 
-      path: "/compare"
+    {
+      name: "Compare",
+      path: "/compare",
     },
-    { 
-      name: "Suggest", 
-      path: "/suggest"
+    {
+      name: "Suggest",
+      path: "/suggest",
     },
-    { 
-      name: "About", 
-      path: "/about"
+    {
+      name: "About",
+      path: "/about",
     },
   ];
 
@@ -77,22 +77,16 @@ function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 lg:px-8">
         {/* Logo with enhanced animation */}
-        <Link
-          to="/"
-          className="flex items-center gap-3 group select-none"
-        >
+        <Link to="/" className="flex items-center gap-3 group select-none">
           <motion.div
             whileHover={{ scale: 1.1, rotate: 5 }}
             transition={{ type: "spring", stiffness: 300 }}
             className="relative"
           >
             <div className="absolute inset-0 bg-linear-to-r from-indigo-500 to-purple-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition-opacity duration-300" />
-            <RiBrainLine 
-              className="text-white relative z-10" 
-              size={28} 
-            />
+            <RiBrainLine className="text-white relative z-10" size={28} />
           </motion.div>
-          <motion.span 
+          <motion.span
             className="text-2xl font-bold bg-linear-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
@@ -120,7 +114,7 @@ function Navbar() {
               {({ isActive }) => (
                 <>
                   {item.name}
-                  
+
                   {/* Hover Background - Only show on hover, not on active state */}
                   {!isActive && activeHover === item.path && (
                     <motion.div
@@ -131,13 +125,17 @@ function Navbar() {
                       transition={{ duration: 0.2 }}
                     />
                   )}
-                  
+
                   {/* Active State Indicator */}
                   {isActive && (
                     <motion.div
                       className="absolute inset-0 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl border border-indigo-100 dark:border-indigo-800/50"
                       layoutId="activeIndicator"
-                      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 30,
+                      }}
                     />
                   )}
                 </>
@@ -146,22 +144,23 @@ function Navbar() {
           ))}
         </div>
 
-        {/* 🔘 CTA Button Only */}
+        {/* CTA Button */}
         <div className="hidden lg:flex items-center">
-          <motion.button
+          <motion.a
+            href="/courses"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-6 py-2.5 bg-linear-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-medium hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300"
           >
             Get Started
-          </motion.button>
+          </motion.a>
         </div>
 
         {/* 📱 Mobile Menu Button */}
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="lg:hidden relative p-3 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all duration-300"
+          className="lg:hidden relative p-2 rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-700 border-2 border-indigo-100 dark:border-indigo-800/50 transition-all duration-300"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
@@ -196,7 +195,7 @@ function Navbar() {
               className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-[-1]"
               onClick={() => setMenuOpen(false)}
             />
-            
+
             {/* Menu Content */}
             <motion.div
               initial={{ opacity: 0, y: -20, scale: 0.95 }}
@@ -222,9 +221,9 @@ function Navbar() {
                     <span className="font-medium">{item.name}</span>
                   </NavLink>
                 ))}
-                
+
                 {/* Mobile CTA */}
-                <div className="p-4 border-t border-zinc-200 dark:border-zinc-800">
+                <div className="p-4">
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
