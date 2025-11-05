@@ -113,7 +113,7 @@ function HeroSection() {
             className="group w-full sm:w-auto flex items-center justify-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-xl hover:bg-white/20 border border-white/20 hover:border-white/30 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-all duration-300"
           >
             <RiRobot2Line size={18} />
-            <span>Compare Platforms</span>
+            <span>Compare Courses</span>
           </motion.a>
         </motion.div>
       </motion.div>
