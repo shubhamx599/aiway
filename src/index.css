@@ -1,5 +1,5 @@
 /* src/index.css */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap");
 
 @import "tailwindcss";
 
@@ -8,7 +8,7 @@
   --font-sans: "Inter", sans-serif;
   --font-display: "Orbitron", sans-serif;
   --font-mono: "Orbitron", monospace;
-  
+
   --color-primary: #6366f1;
   --color-secondary: #3b82f6;
 }
@@ -18,8 +18,6 @@
   --color-bg: #0a0a0a;
   --color-text: #f4f4f5;
   --color-card: #18181b;
-  --color-scroll-track: #1e1e1e;
-  --color-scroll-thumb: #4f4f4f;
 }
 
 /* ---------- BASE RESET ---------- */
@@ -31,40 +29,34 @@ body {
   color: var(--color-text);
 }
 
-/* ---------- PATLA SCROLLBAR ---------- */
+/* ---------- SCROLLBAR ---------- */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-scroll-track);
+  background: #181818;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-scroll-thumb);
+  background: linear-gradient(135deg, #8a2be2, #7c5cff, #5a3cd9);
   border-radius: 10px;
   transition: all 0.3s ease;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-primary);
-  transform: scale(1.1);
-}
-
 ::-webkit-scrollbar-thumb:active {
-  background: var(--color-secondary);
+  background: linear-gradient(135deg, #ec4899, #7c5cff, #8b5cf6);
 }
 
-/* ---------- FIREFOX SCROLLBAR ---------- */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-scroll-thumb) var(--color-scroll-track);
-}
-
-/* ---------- TYPOGRAPHY SYSTEM ---------- */
-h1, h2, h3, h4, h5, h6 {
+/* ---------- TYPOGRAPHY ---------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-display);
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -87,13 +79,16 @@ h3 {
   font-weight: 700;
 }
 
-button, .btn {
+button,
+.btn {
   font-family: var(--font-display);
   font-weight: 600;
   letter-spacing: 0.025em;
 }
 
-nav, .nav, .navbar {
+nav,
+.nav,
+.navbar {
   font-family: var(--font-display);
   font-weight: 600;
 }
@@ -112,7 +107,7 @@ nav, .nav, .navbar {
 }
 
 .card-title {
-  font-family: var(--font-display);
+  font-family: var(--font-sans);
   font-weight: 700;
 }
 
@@ -133,12 +128,16 @@ nav, .nav, .navbar {
   letter-spacing: 0.05em;
 }
 
-code, pre, .code, .tech {
+code,
+pre,
+.code,
+.tech {
   font-family: var(--font-mono);
   font-weight: 500;
 }
 
-.brand, .logo {
+.brand,
+.logo {
   font-family: var(--font-display);
   font-weight: 900;
   letter-spacing: 0.05em;
@@ -152,7 +151,8 @@ code, pre, .code, .tech {
 
 /* ---------- ANIMATIONS ---------- */
 @keyframes gradient {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
@@ -163,15 +163,6 @@ code, pre, .code, .tech {
 .animate-gradient {
   background-size: 300% 300%;
   animation: gradient 6s ease infinite;
-}
-
-.hide-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
 }
 
 .delay-500 {
@@ -187,7 +178,7 @@ code, pre, .code, .tech {
   h1 {
     font-size: 3rem;
   }
-  
+
   h2 {
     font-size: 2.5rem;
   }
