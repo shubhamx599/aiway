@@ -1,8 +1,14 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @import "tailwindcss";
 
 /* ---------- THEME VARIABLES ---------- */
 @theme {
   --font-sans: "Inter", sans-serif;
+  --font-display: "Orbitron", sans-serif;
+  --font-mono: "Orbitron", monospace;
+  
   --color-primary: #6366f1;
   --color-secondary: #3b82f6;
 
@@ -51,36 +57,176 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* ---------- TYPOGRAPHY SYSTEM ---------- */
+
+/* Headings - Orbitron for impact */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+/* Specific heading styles */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Buttons - Orbitron for tech feel */
+button, .btn {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+/* Navigation - Orbitron for brand identity */
+nav, .nav, .navbar {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* Hero Sections - Special treatment */
+.hero-heading {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.hero-subtitle {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+/* Cards & Sections */
+.card-title {
+  font-family: var(--font-sans);
+  font-weight: 700;
+}
+
+.card-body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
+/* Stats & Numbers */
+.stat-number {
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+
+.stat-label {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Code & Tech elements */
+code, pre, .code, .tech {
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+/* Brand & Logo */
+.brand, .logo {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
 /* ---------- SELECTION ---------- */
 ::selection {
   background: var(--color-primary);
   color: white;
 }
 
-/* ---------- CUSTOM SCROLLBAR ---------- */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+/* ---------- ANIMATIONS ---------- */
+
+/* Gradient Animation */
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
-::-webkit-scrollbar-track {
-  background: var(--color-scroll-track);
-  border-radius: 9999px;
+.animate-gradient {
+  background-size: 300% 300%;
+  animation: gradient 6s ease infinite;
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--color-scroll-thumb);
-  border-radius: 9999px;
-  border: 2px solid var(--color-scroll-track);
-  transition: 0.3s ease;
+/* Custom pulse animation delays */
+.delay-500 {
+  animation-delay: 500ms;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-primary);
+.delay-1000 {
+  animation-delay: 1000ms;
 }
 
-/* ---------- FIREFOX SCROLLBAR ---------- */
+/* ---------- HIDE SCROLLBAR ---------- */
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html,
+body,
 * {
-  scrollbar-width: thin;
-  scrollbar-color: var(--color-scroll-thumb) var(--color-scroll-track);
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;      /* Firefox */
+}
+
+/* Ensure scrolling still works */
+html,
+body {
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  overflow: auto;
+}
+
+/* Optional: Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* ---------- RESPONSIVE TYPOGRAPHY ---------- */
+@media (min-width: 640px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
