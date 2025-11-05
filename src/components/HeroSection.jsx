@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { RiSparklingLine, RiPlayCircleLine, RiArrowRightLine, RiRobot2Line } from "@remixicon/react";
 
 function HeroSection() {
-  const platforms = ["Coursera", "Udemy", "edX", "Pluralsight", "DataCamp", "LinkedIn Learning"];
+  const platforms = ["Coursera", "Udemy", "edX", "DataCamp", "LinkedIn Learning", "Kaggle", "Fast.ai", "Pluralsight", "Skillshare", "FutureLearn", "Udacity"];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -30,7 +30,7 @@ function HeroSection() {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden px-4 sm:px-6 lg:px-8 pt-16 lg:pt-20 pb-12 sm:pb-16 lg:pb-20 bg-linear-to-br from-slate-950 via-purple-950 to-slate-900">
+    <section className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden px-4 sm:px-6 lg:px-8 pt-24 lg:pt-20 pb-12 sm:pb-16 lg:pb-20 bg-linear-to-br from-slate-950 via-purple-950 to-slate-900">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-linear-to-r from-blue-500/10 to-purple-600/10 rounded-full blur-3xl" />
