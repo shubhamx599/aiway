@@ -69,7 +69,7 @@ function Navbar() {
   return (
     <nav
       ref={navbarRef}
-      className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${
+      className={`fixed top-0 left-0 w-full z-100 transition-all duration-500 ${
         scrolled
           ? "py-3 bg-white/3 backdrop-blur-xl shadow-2xl shadow-zinc-900/10"
           : "py-5 bg-transparent"
@@ -86,14 +86,14 @@ function Navbar() {
             transition={{ type: "spring", stiffness: 300 }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 bg-linear-to-r from-indigo-500 to-purple-600 rounded-xl blur opacity-75 group-hover:opacity-100 transition-opacity duration-300" />
             <RiBrainLine 
               className="text-white relative z-10" 
               size={28} 
             />
           </motion.div>
           <motion.span 
-            className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text"
+            className="text-2xl font-bold bg-linear-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
@@ -124,7 +124,7 @@ function Navbar() {
                   {/* Hover Background - Only show on hover, not on active state */}
                   {!isActive && activeHover === item.path && (
                     <motion.div
-                      className="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-purple-600/10 rounded-xl"
+                      className="absolute inset-0 bg-linear-to-r from-indigo-500/10 to-purple-600/10 rounded-xl"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
@@ -151,7 +151,7 @@ function Navbar() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-medium hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300"
+            className="px-6 py-2.5 bg-linear-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-medium hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300"
           >
             Get Started
           </motion.button>
@@ -228,7 +228,7 @@ function Navbar() {
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-medium shadow-lg shadow-indigo-500/25"
+                    className="w-full py-3 bg-linear-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-medium shadow-lg shadow-indigo-500/25"
                   >
                     Get Started Free
                   </motion.button>
